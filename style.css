@@ -27,7 +27,7 @@ main{
 .card{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   gap: 30px;
   background-color: #fff;
   height: 400px;
@@ -106,6 +106,33 @@ main{
   font-weight: bold;
 }
 
+.add-to-cart:hover{
+  background-color: hsl(158, 37%, 27%);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width:550px) {
+  .card{
+    flex-direction: column;
+    height: 800px;
+    width: 80%;
+    zoom: 200%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .product-sheet{
+    padding-left: 15px;
+  }
+  .parfume-image{
+    background-image: url("./images/image-product-mobile.jpg");
+    height: 240px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+}
 
 .attribution { font-size: 11px; text-align: center; }
 

@@ -30,11 +30,16 @@
   <body>
     <main>
       <div class="card">
-        <img
-          class="parfume-image"
-          src="./images/image-product-desktop.jpg"
-          alt="image du produit"
-        />
+        <picture>
+
+          <source media="(min-width: 550px)" srcset="./images/image-product-desktop.jpg">
+          <source media="(max-width: 550px)" srcset="./images/image-product-mobile.jpg">
+          <img
+            class="parfume-image"
+            src="./images/image-product-desktop.jpg"
+            alt="image du produit"
+          />
+        </picture>
 
         <div class="product-sheet">
           <h2>PERFUME</h2>
